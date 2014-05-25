@@ -61,10 +61,10 @@
 
 
 		//We get every countdown element's html inside the main element.
-		this.append(dwcd_day);
-		this.append(dwcd_hour);
-		this.append(dwcd_minute);
-		this.append(dwcd_second);
+		this.prepend(dwcd_second);
+		this.prepend(dwcd_minute);
+		this.prepend(dwcd_hour);
+		this.prepend(dwcd_day);
 
 
 		function update(){
