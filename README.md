@@ -18,7 +18,7 @@ On a dom element, call method countdown() with/without your preferences.
 
 ```js
 $('div').countdown({
-	end_time: "2014-04-15T22:45+06:00"
+	end_time: "2016/06/21 14:27:28 +0600"
 });
 ```
 
@@ -27,16 +27,17 @@ Following properties are supported:
 `start_time`, `end_time`, `show_day`, `show_hour`, `show_minute`, `show_second`, `update_int`, `progress`, `onComplete`, `wrapper`, `update_progress`
 
 ##start_time
-Specifies a time where the progressbar should have no progress(zero). You can pass any datetime string that is supported by javascript Data() object. However, I recommend the format, `YYYY-MM-DDThh:mmTZD`. Where,
+Specifies a time where the progressbar should have no progress(zero). You can pass any datetime string that is supported by javascript Data() object. However, I recommend the format, `YYYY/MM/DD hh:mm:ss +TZD`. Where,
 YYYY	= Year
 MM		= Month
 DD		= Day of month
 hh		= Hour in 24 hour format
 mm		= Minutes
-TZD		= Timezone offset
+ss		= Minutes
+TZD		= Timezone UTC offset
 
 Example:
-`2014-05-25T13:34+06:00`
+`2016/06/21 14:27:28 +0600`
 
 ##end_time
 The countdown completes at this point and progressbar fills 100%. It support same input is `start_time`.
